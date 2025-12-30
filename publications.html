@@ -16,7 +16,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #a8a8a8 0%, #7a7a7a 100%);
             min-height: 100vh;
         }
 
@@ -41,7 +41,7 @@
         .logo {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #667eea;
+            color: #333;
         }
 
         .nav-links {
@@ -98,13 +98,13 @@
         }
 
         h1 {
-            color: #667eea;
+            color: #333;
             font-size: 2.5rem;
             margin-bottom: 2rem;
         }
 
         .section-title {
-            color: #764ba2;
+            color: #333;
             font-size: 1.5rem;
             margin-top: 2rem;
             margin-bottom: 1.5rem;
@@ -117,8 +117,32 @@
             padding: 1.5rem;
             border-radius: 10px;
             margin-bottom: 1.5rem;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #333;
             transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .publication-content {
+            flex: 1;
+            width: 100%;
+        }
+
+        .publication-image {
+            width: 100%;
+            max-width: 480px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .publication-image:hover {
+            transform: scale(1.1);
         }
 
         .publication-item:hover {
@@ -154,7 +178,7 @@
             display: inline-block;
             margin-top: 2rem;
             padding: 1rem 2rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #555 0%, #333 100%);
             color: white;
             text-decoration: none;
             border-radius: 30px;
@@ -187,6 +211,12 @@
 
             .publication-item {
                 padding: 1rem;
+                flex-direction: column;
+            }
+
+            .publication-image {
+                width: 100%;
+                height: auto;
             }
         }
     </style>
@@ -194,7 +224,7 @@
 <body>
     <nav>
         <div class="nav-container">
-            <div class="logo">Portfolio</div>
+            <div class="logo">Thathsara D. Maddumapatabandi</div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="experience.html">Experience</a></li>
@@ -212,53 +242,74 @@
             <div class="section-title">Key Publications</div>
 
             <div class="publication-item">
-                <div class="pub-title">Influence of Substrate Defects on the Electronic Properties of the WS2 Monolayer/Highly Oriented Pyrolytic Graphite Heterostructure</div>
-                <div class="pub-authors"><b>Thathsara D. Maddumapatabandi</b>, F Bussolotti, W Fu, H Kawai, KE Johnson Goh</div>
-                <div class="pub-venue"><a href="https://pubs.acs.org/doi/abs/10.1021/acsaelm.4c01330">ACS Applied Electronic Materials 6 (11), 7980-7988</a></div>
-                <div class="pub-year">2024</div>
+                <div class="publication-content">
+                    <div class="pub-title">Influence of Substrate Defects on the Electronic Properties of the WS<sub>2</sub> Monolayer/Highly Oriented Pyrolytic Graphite Heterostructure</div>
+                    <div class="pub-authors"><b>Thathsara D. Maddumapatabandi</b>, F Bussolotti, W Fu, H Kawai, KE Johnson Goh</div>
+                    <div class="pub-venue"><a href="https://pubs.acs.org/doi/abs/10.1021/acsaelm.4c01330">ACS Applied Electronic Materials 6 (11), 7980-7988</a></div>
+                    <div class="pub-year">2024</div>
+                </div>
+                <img src="images/1.png" alt="Publication image" class="publication-image">
             </div>
 
             <div class="publication-item">
-                <div class="pub-title">Evidence of air-induced surface transformation of atomic step-engineered sapphire in relation to epitaxial growth of 2D semiconductors</div>
-                <div class="pub-authors">W Fu, J Chai, H Kawai, Thathsara D. Maddumapatabandi, F Bussolotti, D Huang, ...</div>
-                <div class="pub-venue">Nature Communications 16 (1), 8488</div>
-                <div class="pub-year">2025</div>
+                <div class="publication-content">
+                    <div class="pub-title">Evidence of air-induced surface transformation of atomic step-engineered sapphire in relation to epitaxial growth of 2D semiconductors</div>
+                    <div class="pub-authors">W Fu, J Chai, H Kawai, <b>Thathsara D. Maddumapatabandi</b>, F Bussolotti, D Huang</div>
+                    <div class="pub-venue">Nature Communications 16 (1), 8488</div>
+                    <div class="pub-year">2025</div>
+                </div>
+                <img src="images/2.png" alt="Publication image" class="publication-image">
             </div>
 
             <div class="publication-item">
-                <div class="pub-title">Role of S-Vacancy Concentration in Air Oxidation of WS2 Single Crystals</div>
-                <div class="pub-authors">F Bussolotti, H Kawai, Thathsara D. Maddumapatabandi, W Fu, KH Khoo, KEJ Goh</div>
-                <div class="pub-venue">ACS nano 18 (12), 8706-8717</div>
-                <div class="pub-year">2024</div>
+                <div class="publication-content">
+                    <div class="pub-title">Role of S-Vacancy Concentration in Air Oxidation of WS<sub>2</sub> Single Crystals</div>
+                    <div class="pub-authors">F Bussolotti, H Kawai, <b>Thathsara D. Maddumapatabandi</b>, W Fu, KH Khoo, KEJ Goh</div>
+                    <div class="pub-venue">ACS nano 18 (12), 8706-8717</div>
+                    <div class="pub-year">2024</div>
+                </div>
+                <img src="images/3.png" alt="Publication image" class="publication-image">
             </div>
 
             <div class="publication-item">
-                <div class="pub-title">Toward Phonon-Limited Transport in Two-Dimensional Transition Metal Dichalcogenides by Oxygen-Free Fabrication</div>
-                <div class="pub-authors">S Mukherjee, S Wang, D Venkatakrishnarao, Y Tarn, T Talha-Dean, ...</div>
-                <div class="pub-venue">ACS nano 19 (9), 9327-9339</div>
-                <div class="pub-year">2025</div>
+                <div class="publication-content">
+                    <div class="pub-title">Toward Phonon-Limited Transport in Two-Dimensional Transition Metal Dichalcogenides by Oxygen-Free Fabrication</div>
+                    <div class="pub-authors">S Mukherjee, S Wang, D Venkatakrishnarao, Y Tarn, T Talha-Dean, <b>Thathsara D. Maddumapatabandi</b></div>
+                    <div class="pub-venue">ACS nano 19 (9), 9327-9339</div>
+                    <div class="pub-year">2025</div>
+                </div>
+                <img src="images/4.png" alt="Publication image" class="publication-image">
             </div>
 
             <div class="publication-item">
-                <div class="pub-title">Oxidation of Sn at the Cluster–Support Interface: Sn and Pt–Sn Clusters on TiO2(110)</div>
-                <div class="pub-authors">S Beniwal, W Chai, K Metavarayuth, Thathsara D. Maddumapatabandi, DM Shakya, ...</div>
-                <div class="pub-venue">The Journal of Physical Chemistry C 125 (32), 17671-17683</div>
-                <div class="pub-year">2021</div>
+                <div class="publication-content">
+                    <div class="pub-title">Oxidation of Sn at the Cluster–Support Interface: Sn and Pt–Sn Clusters on TiO<sub>2</sub>(110)</div>
+                    <div class="pub-authors">S Beniwal, W Chai, K Metavarayuth, <b>Thathsara D. Maddumapatabandi</b>, DM Shakya</div>
+                    <div class="pub-venue">The Journal of Physical Chemistry C 125 (32), 17671-17683</div>
+                    <div class="pub-year">2021</div>
+                </div>
+                <img src="images/5.png" alt="Publication image" class="publication-image">
             </div>
 
             
             <div class="publication-item">
-                <div class="pub-title">Toward edge engineering of two-dimensional layered transition-metal dichalcogenides by chemical vapor deposition</div>
-                <div class="pub-authors">W Fu, M John, Thathsara D. Maddumapatabandi, F Bussolotti, YS Yau, M Lin, ...</div>
-                <div class="pub-venue">ACS nano 17 (17), 16348-16368</div>
-                <div class="pub-year">2023</div>
+                <div class="publication-content">
+                    <div class="pub-title">Toward edge engineering of two-dimensional layered transition-metal dichalcogenides by chemical vapor deposition</div>
+                    <div class="pub-authors">W Fu, M John, <b>Thathsara D. Maddumapatabandi</b>, F Bussolotti, YS Yau, M Lin</div>
+                    <div class="pub-venue">ACS nano 17 (17), 16348-16368</div>
+                    <div class="pub-year">2023</div>
+                </div>
+                <img src="images/6.png" alt="Publication image" class="publication-image">
             </div>
 
                         <div class="publication-item">
-                <div class="pub-title">Band structure and spin texture of 2D materials for valleytronics: insights from spin and angle-resolved photoemission spectroscopy</div>
-                <div class="pub-authors">F Bussolotti, Thathsara D. Maddumapatabandi, KEJ Goh</div>
-                <div class="pub-venue">Materials for Quantum Technology 3 (3), 032001</div>
-                <div class="pub-year">2023</div>
+                <div class="publication-content">
+                    <div class="pub-title">Band structure and spin texture of 2D materials for valleytronics: insights from spin and angle-resolved photoemission spectroscopy</div>
+                    <div class="pub-authors">F Bussolotti, <b>Thathsara D. Maddumapatabandi</b>, KEJ Goh</div>
+                    <div class="pub-venue">Materials for Quantum Technology 3 (3), 032001</div>
+                    <div class="pub-year">2023</div>
+                </div>
+                <img src="images/7.png" alt="Publication image" class="publication-image">
             </div>
                 
             <a href="https://scholar.google.com/citations?hl=en&user=lXNVHD4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" class="scholar-link">
